@@ -1,11 +1,11 @@
 import { reactive } from "vue";
 const store = reactive(
-    {
+        {
 
-        search: 'Jumper',
-        card: [],
+                search: 'Spider-Man',
+                card: [],
 
-    }
+        }
 
 
 )
