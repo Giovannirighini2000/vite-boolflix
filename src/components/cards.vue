@@ -3,14 +3,18 @@
         <div class="relative">
             <img class="img-card" :src="getImageUrl()" />
             <div class="card-info">
-                <p class="white">{{ card.title || card.name }}</p>
-                <p class="white">{{ card.original_title || card.original_name }}</p>
-                <p>
-                    <img v-if="languageMapImg[card.original_language]" :src="languageMapImg[card.original_language]"
-                        class="img-size" />
-                    <span v-else class="white">{{ card.original_language }}</span>
-                </p>
-                <p class="yellow-stars">{{ getStarRating(card.vote_average) }}</p>
+                <p class="white"><span class="info-bold">titolo:</span> {{ card.title || card.name }}</p>
+                <p class="white"><span class="info-bold">titolo originale:</span> {{ card.original_title ||
+                    card.original_name }}</p>
+                <div class="flex gap-info">
+                    <p>
+                        <img v-if="languageMapImg[card.original_language]" :src="languageMapImg[card.original_language]"
+                            class="img-size" />
+                        <span v-else class="white">{{ card.original_language }}</span>
+                    </p>
+                    <p class="yellow-stars"><span class="info-bold">voto:</span> {{ getStarRating(card.vote_average) }}</p>
+                </div>
+                <p class="over-view"><span class="info-bold">Overview:</span> {{ card.overview }}</p>
             </div>
         </div>
     </div>
@@ -70,13 +74,18 @@ export default {
     height: 170px;
 }
 
+.info-bold {
+    font-weight: bold;
+}
+
 .white {
     color: white;
+
 }
 
 .card-info {
     position: absolute;
-    top: 8%;
+    top: -15px;
     left: 0;
     visibility: hidden;
     background-color: rgba(0, 0, 0, 0.8);
@@ -107,6 +116,14 @@ export default {
 
 .yellow-stars {
     color: yellow;
+}
+
+.over-view {
+    color: white;
+}
+
+.gap-info {
+    gap: 5px;
 }
 </style>
   
