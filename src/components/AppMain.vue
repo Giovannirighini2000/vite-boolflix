@@ -1,37 +1,34 @@
 <template >
-    <div class="back-base">
-
-        <div class="container-2 ">
-            <h4 class="mini-title">
-                I nostri film/serie tv piu amate e votate di sempre <span class="red">ORIGINALI DI NETLIX</span>
-            </h4>
-            <div class="flex gap">
-                <div>
-                    <img class="img-card"
-                        src="https://occ-0-448-55.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcL5jLOTAi6HXLNlsRDzpf7v08IAzrUNZrAnCbLWgI9pl9--18vxOC0c1HUa-_juV6tdkUCyaNltNHvRw1cjSsoSE8fATn0ATFW2Q9vQltY6Ffnf2BlQhxpAB6wSaf7_9nLp.jpg?r=c0e"
-                        alt="">
-                </div>
-                <div>
-                    <img class="img-card"
-                        src="https://img.netflixlovers.it/img/movies/T/80189221-the-haunting-of-hill-house-netflix-boxarth_w300.jpg?v=230125103242"
-                        alt="">
-                </div>
-                <div>
-                    <img class=" img-card" src="https://wallpapercave.com/wp/wp4261187.jpg" alt="">
-                </div>
-                <div>
-                    <img class="img-card" src="https://www.today.it/~media/horizontal-hi/70073369407015/lupin-2-2.jpeg"
-                        alt="">
-                </div>
-                <div>
-                    <img class="img-card"
-                        src="https://www.nerdpool.it/wp-content/uploads/2020/08/Lucifer-5-netflix-recensione-episodi-nuova-stagione.jpg"
-                        alt="">
-                </div>
-
+    <div class="container-2 ">
+        <h4 class="mini-title">
+            I nostri film/serie tv piu amate e votate di sempre <span class="red">ORIGINALI DI NETLIX</span>
+        </h4>
+        <div class="flex ">
+            <div>
+                <img class="img-card"
+                    src="https://www.panorama.it/media-library/image.jpg?id=32209139&width=600&height=600&quality=85&coordinates=0%2C0%2C0%2C180"
+                    alt="">
+            </div>
+            <div>
+                <img class="img-card"
+                    src="https://www.smartworld.it/wp-content/uploads/2018/09/HauntingOfHillHouse_Vertical-Main_PRE_IT-338x500.jpg"
+                    alt="">
+            </div>
+            <div>
+                <img class=" img-card"
+                    src="https://media-assets.wired.it/photos/637df876e927acdea226c4ef/master/pass/poster.jpeg" alt="">
+            </div>
+            <div>
+                <img class="img-card"
+                    src="https://letteraturahorror.it/wp-content/uploads/2021/12/coyotes2021-1200x1696.jpg" alt="">
+            </div>
+            <div>
+                <img class="img-card"
+                    src="https://www.tvserial.it/wp-content/uploads/2021/02/lucifer-stagione-6-poster-460x600.jpeg" alt="">
             </div>
 
         </div>
+
     </div>
 </template>
   
@@ -42,14 +39,13 @@
 <style lang="scss" scoped>
 .img-card {
     width: 300px;
+    height: 450px;
+    object-fit: cover;
+    margin: 11px;
 }
 
 .red {
     color: red;
-}
-
-.back-base {
-    background-color: black;
 }
 
 .container-2 {

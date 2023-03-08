@@ -12,7 +12,7 @@
                     placeholder="Cerca il nome del film " class="cerca">
                 <div>
                     <button @click="$emit('onSearch')" class="cerca-2">
-                        cerca
+                        🔍
 
                     </button>
                 </div>
@@ -41,7 +41,6 @@ export default {
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background-color: black;
     color: white;
     padding: 0 20px;
 }
@@ -56,14 +55,14 @@ export default {
 }
 
 .avatar img {
-    height: 40px;
+    height: 50px;
     border-radius: 50%;
     aspect-ratio: 1;
     object-fit: cover;
 }
 
 .avatar {
-    gap: 15px;
+    gap: 45px;
 }
 
 .logo-container {
@@ -73,17 +72,22 @@ export default {
 }
 
 .cerca {
-    border: 1px solid red;
     border-radius: 10px;
     height: 30px;
+    text-align: center;
 
 }
 
 .cerca-2 {
 
     border-radius: 6px;
-    height: 24px;
+    padding: 4px;
 
+
+}
+
+.cerca-2:hover {
+    transform: scale(1.3);
 }
 
 .center {
@@ -91,6 +95,6 @@ export default {
 }
 
 .gap {
-    gap: 5px;
+    gap: 10px;
 }
 </style>

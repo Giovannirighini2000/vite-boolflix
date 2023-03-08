@@ -34,11 +34,6 @@ button {
     align-items: center;
 }
 
-.background-base-black {
-    background-color: black;
-}
-
-
 .wrap {
     flex-wrap: wrap;
 }
@@ -59,4 +54,8 @@ button {
 .mini-title {
     color: white;
     padding-bottom: 10px;
+}
+
+body {
+    background-color: black;
 }

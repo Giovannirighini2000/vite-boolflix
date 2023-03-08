@@ -67,6 +67,7 @@ export default {
 .img-card {
     width: 300px;
     position: relative;
+    height: 170px;
 }
 
 .white {

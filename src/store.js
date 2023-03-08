@@ -2,7 +2,7 @@ import { reactive } from "vue";
 const store = reactive(
         {
 
-                search: 'il signore degli anelli',
+                search: '',
                 allcontent: [],
                 card: [],
                 tvShows: [],

@@ -6,6 +6,7 @@
     <div class="container-2">
       <h4 class="mini-title">
         La tua Ricerca
+        .....
       </h4>
       <div class="flex wrap gap">
         <cards v-for="content in store.allcontent" :key="content.id" :card="content" />
