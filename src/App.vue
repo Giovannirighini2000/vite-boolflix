@@ -3,9 +3,15 @@
 
   <AppMain />
   <div class="background-base-black">
+    <div class="container-2">
+      <h4 class="mini-title">
+        La tua Ricerca
+      </h4>
+      <div class="flex wrap gap">
+        <cards v-for="content in store.allcontent" :key="content.id" :card="content" />
+      </div>
 
-    <div class="flex wrap gap container-2">
-      <cards v-for="content in store.allcontent" :key="content.id" :card="content" />
+
     </div>
   </div>
 </template>

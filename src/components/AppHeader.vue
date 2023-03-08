@@ -11,7 +11,7 @@
                 <input @keyup.enter="$emit('onSearch')" type="text" v-model="store.search"
                     placeholder="Cerca il nome del film " class="cerca">
                 <div>
-                    <button on-click="$emit('onSearch')" class="cerca-2">
+                    <button @click="$emit('onSearch')" class="cerca-2">
                         cerca
 
                     </button>
