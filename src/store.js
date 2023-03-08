@@ -2,8 +2,11 @@ import { reactive } from "vue";
 const store = reactive(
         {
 
-                search: 'Spider-Man',
+                search: 'il signore degli anelli',
+                allcontent: [],
                 card: [],
+                tvShows: [],
+
 
         }
 

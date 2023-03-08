@@ -33,3 +33,21 @@ button {
 .item-aling {
     align-items: center;
 }
+
+.background-base-black {
+    background-color: black;
+}
+
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.gap {
+    gap: 25px;
+}
+
+.container-2 {
+    max-width: 1600px;
+    margin: 0 auto;
+}
