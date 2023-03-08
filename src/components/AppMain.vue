@@ -3,7 +3,7 @@
         <h4 class="mini-title">
             I nostri film/serie tv piu amate e votate di sempre <span class="red">ORIGINALI DI NETLIX</span>
         </h4>
-        <div class="flex ">
+        <div class="flex gap-img-pred">
             <div>
                 <img class="img-card"
                     src="https://www.panorama.it/media-library/image.jpg?id=32209139&width=600&height=600&quality=85&coordinates=0%2C0%2C0%2C180"
@@ -41,7 +41,7 @@
     width: 300px;
     height: 450px;
     object-fit: cover;
-    margin: 11px;
+
 }
 
 .red {
@@ -50,5 +50,9 @@
 
 .container-2 {
     padding-bottom: 30px;
+}
+
+.gap-img-pred {
+    gap: 25px;
 }
 </style>

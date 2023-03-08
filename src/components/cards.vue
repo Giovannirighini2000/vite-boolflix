@@ -36,13 +36,20 @@ export default {
                 de: "/flags/de.png",
                 es: "/flags/es.jpg",
                 it: "/flags/it.jpg",
+                fi: "/flags/fi.jpg",
+                sl: "/flags/sl.jpg",
+                sk: "/flags/sk.jpg",
+                pt: "/flags/pt.jpg",
+                mt: "/flags/mt.jpg",
+                ga: "/flags/ga.jpg",
+                ja: "/flags/ja.jpg",
             },
         };
     },
     methods: {
         getImageUrl() {
             const baseUrl = "https://image.tmdb.org/t/p/w342";
-            const imagePath = this.card.backdrop_path;
+            const imagePath = this.card.poster_path;
             if (imagePath) {
                 return baseUrl + imagePath;
             } else {
@@ -71,7 +78,8 @@ export default {
 .img-card {
     width: 300px;
     position: relative;
-    height: 170px;
+    height: 450px;
+
 }
 
 .info-bold {
